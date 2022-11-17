@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;400&display=swap');
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn{
+    background-color: white;
+    border: 0;
+    padding: 5px;
+    font-family: 'Advent Pro', sans-serif;
+}
