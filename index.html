@@ -18,7 +18,15 @@
   <div class="container1">
     <button style="border: 0; background-color:white; cursor: pointer;"><div class="header-text">Avash.</div></button>
     <div class="menu">
-      <div class="bar" id="toggle"></div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Experince</a>
+        <a href="#">Testimonials</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
   </div>
   <div class="greet">Hey, I'm Avash.</div>
@@ -170,11 +178,11 @@
     <div class="details-maps">
       <div class="details-input">
         <div class="names">
-          <div class="fName" style="border-bottom: 2px #252525 solid;"><input type="text" class="input" placeholder="First Name"></div>
-          <div class="lName" style="border-bottom: 2px #252525 solid;"><input type="text" class="input" placeholder="Last Name"></div>
+          <div class="fName"><input type="text" class="input" placeholder="First Name"></div>
+          <div class="lName"><input type="text" class="input" placeholder="Last Name"></div>
         </div>
         <div class="email"><input type="text" class="input" placeholder="Email Address"></div>
-        <div class="feedback"><input type="text" class="input" placeholder="Write Your Message..."></div>
+        <div class="feedback"><textarea name="Message" id="message" cols="30" rows="10" placeholder="Write Your Message..."></textarea></div>
       </div>
       <div class="image"><img src="pictures/maps.png" alt="Image of a Map" width="300px" height="300px"></div>
     </div>
@@ -203,5 +211,15 @@
       <div style="padding-bottom: 20px;">Telegram</div>
     </div>
   </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </body>
 </html>

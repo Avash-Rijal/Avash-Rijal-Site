@@ -1,3 +1,7 @@
+body{
+    font-family: 'Advent Pro', sans-serif;
+}
+
 .container1 {
     display: flex;
     gap: 18.4cm;
@@ -169,8 +173,8 @@
 .container5{
     font-family: 'Advent Pro', sans-serif; 
     margin-top: 30px;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 300px;
+    margin-right: 300px;
     text-align: center;
     
 }
@@ -255,12 +259,50 @@ input {
     display: flex;
     margin-bottom: 20px;
     margin-left: 25px;
-    border-bottom: 2px #252525 solid;
 }
 .feedback{
     display: flex;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     margin-left: 25px;
-    border-bottom: 2px #252525 solid;
 }
+#message{
+    height: 10em;
+    width: 30em;
+    background-color: transparent;
+    border: hidden;
+}
+.sidenav {
+    height: 60%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 8px;
+  }
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 25px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.sidenav a:hover {
+    color: #818181;
+  }
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 /* font-family: 'Advent Pro', sans-serif; */
