@@ -16,43 +16,6 @@ body{
     position: relative;
 }
 
-.menu{
-    height: 4rem;
-    width: 3rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-.bar{
-    width: 1.9rem;
-    height: 1.5px;
-    border-radius: 2px;
-    background-color: #171717;
-    transition: 0.5s;
-    position: relative;
-}
-
-.bar:before,
-.bar:after {
-    content: "";
-    position:absolute;
-    width: inherit;
-    height: inherit;
-    background-color: #171717;
-    transition: 0.5s;
-}
-.bar:before{
-    transform: translateY(-9px);
-}
-.bar:after{
-    transform: translateY(9px);
-}
-.container.active .bar{
-    transform: rotate(360deg);
-    background-color: transparent;
-}
-
 .btn {
     position: fixed;
     background-color: white;
@@ -305,4 +268,22 @@ input {
     font-size: 36px;
     margin-left: 50px;
   }
+
+.sliding-feedbacks{
+    display: flex;
+    gap: 10px;
+}
+.person-container-hidden {
+    display: flex;
+    flex-direction: row;
+  }
+  .swiper .swiper-button-prev , .swiper .swiper-button-next{
+    color: #111;
+  }
+  .swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover{
+    color: #818181;
+  }
+
+
+    
 /* font-family: 'Advent Pro', sans-serif; */
