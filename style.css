@@ -44,8 +44,8 @@ body{
     padding: 10px;
     border-radius: 20px;
     border: none;
-    box-shadow: 2px;
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.8);
+    /* box-shadow: 2px;
+    box-shadow: 1px 1px 5px 1px rgba(229, 230, 255,.8); */
     cursor: pointer;
 }
 .container2{
@@ -87,7 +87,9 @@ body{
 .aboutme{
     position: relative;
     display: flex;
-    margin-top: 75px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
     margin-left: 250px;
     margin-right: 50px;
     flex-direction: row;
@@ -100,8 +102,8 @@ body{
     padding: 10px;
     border-radius: 20px;
     border: none;
-    box-shadow: 2px;
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.8);
+    /* box-shadow: 2px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.8); */
     cursor: pointer;
 }
 .container4{
@@ -147,6 +149,12 @@ body{
     justify-content: center;
     gap: 20px;
 }
+.person-container-hidden{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
 .container6{
     background-color: #dfe7ff;
     margin-top: 30px;
@@ -161,37 +169,38 @@ body{
     background-color: #171717;
     margin-left: 250px;
     margin-right: 250px;
+    padding-bottom: 15px;
     color: #757b87;
     font-family: 'Advent Pro', sans-serif;
 }
 .navigation{
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 35px;
     font-size: 14px;
 }
 .vertical-line1{
     border-left: 2px solid #757b87;
     height: 150px;
     position:absolute;
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 210px; 
 }
 .producers{
     font-size: 14px;
     text-align: center;
     margin-left: 190px;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 .vertical-line2{
     border-left: 2px solid #757b87;
     height: 150px;
     position:absolute;
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 600px; 
 }
 .social-media{
     font-size: 14px;
-    padding-top: 50px;
+    padding-top: 35px;
     margin-left: 180px;
 }
 input {
@@ -277,12 +286,20 @@ input {
     display: flex;
     flex-direction: row;
   }
+  .swiper{
+    margin-bottom: 10px;
+  }
   .swiper .swiper-button-prev , .swiper .swiper-button-next{
     color: #111;
   }
   .swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover{
     color: #818181;
   }
+
+  a{
+    text-decoration:none;
+    color: #757b87;
+    }
 
 
     
